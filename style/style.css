@@ -1,0 +1,232 @@
+@import './reset.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;500&family=Roboto:wght@100&display=swap');
+
+:root {
+    --color-primary: #c1acac;
+    --color-dark-1: #1e1e1e;
+    --color-dark-2: #6d6d6d;
+    --font-primary: 'Poppins', sans-serif;
+    --font-logo: 'Kanit', sans-serif;
+    --color-white: #fff;
+    --color-dark-info: #7d8da1;
+    --color-dark-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: #848bc82e;
+
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+.text_muted{
+    color: var(--color-dark);
+    
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    background-color: var(--color-white);
+
+}
+
+.container {
+    width: 1140px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding: 0 0.8rem;
+
+}
+
+.section {
+    padding: 0 5rem;
+}
+
+/* nav */
+
+nav {
+    
+    width: 100%;
+    height: 100%;
+
+}
+
+nav .nav_container {
+    /* width: 100%; */
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    text-align: center;
+    align-items: center;
+}
+.nav_left{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-left: 3rem;
+}
+.logo{
+    font-weight: 700;
+    font-size: 1.25;
+    font-family: var(--font-logo);
+    color: var(--color-dark-2);
+    line-height: 1;
+    margin-right: 1.5rem;
+}
+.nav_link{
+    margin:0 6px;
+    color: var(--color-dark-1);
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav_link:hover{
+    border-bottom: 3px solid green;
+}
+.nav_link.active{
+    background-color: var(--color-light);
+    padding: 10px 8px;
+    border-radius: var(--border-radius-1);
+}
+nav .nav-right{
+    display: flex;
+    margin: 0 1rem;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+nav .nav-right span{
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    color: var(--color-dark-1);
+}
+/* header */
+
+header{
+    width: 100%;
+    height: 465px;
+    background-image:url(../images/bg.png);
+    background-position: right;
+    background-size: cover;
+    
+}
+.header_content{
+    width: 100%;
+    height: 100%;
+    display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+   align-items: center;
+   padding:0 2rem;
+}
+.header_content h1{
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.1;
+    width: 35%;
+}
+.header_content .header_item{
+    display: flex;
+    margin: 2rem 0 3rem 0;
+    font-size: 1rem;
+    gap: 5rem;
+    
+}
+.header_content .header_item .header_items{
+   
+    font-weight: 600;
+}
+.header_content .header_item .header_items p:first-child{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+header .header_content form{
+    padding: 0.8rem;
+    background-color: #f3f3f3;
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+   
+}
+header .header_content form input{
+    padding: 8px 6px;
+    outline: 0;
+    border: 0;
+    background-color: #f3f3f3;
+    font-size: 1rem;
+}
+header .header_content form input:focus{
+    color: var(--color-primary);
+}
+header .header_content form span{
+    font-size: 2rem;
+    color: var(--color-dark-1);
+    padding: 3px;
+    cursor: pointer;
+  
+}
+.selling_coniner{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(160px,1fr ));
+    gap: 1rem;
+    margin: 7rem 0;
+}
+.selling_coniner div:first-child{
+    margin-top: 1rem;
+        width: 62%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: start;
+    margin-left: 3rem;
+}
+.selling_coniner div:first-child h1{
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 800;
+}
+.selling_coniner div:first-child a{
+    font-size: 1.2rem;
+    color: var(--color-dark-1);
+    background-color: var(--color-primary);
+    padding: 10px 8px;
+    width: 115px;
+    text-align: center;
+}
+.selling_coniner  .selling_items{
+   gap: 2rem;
+   margin:0 0.8rem;
+}
+.selling_coniner  .selling_items p {
+    margin: 1rem 0;
+}
+h6{
+    margin: 1rem 0;
+}
+.selling_coniner  .selling_items img{
+    width: 100%;
+}
+
+
+/* media query */
+@media screen and (max-width:1172px) {
+    .container{
+        width: 100%;
+    }
+}
