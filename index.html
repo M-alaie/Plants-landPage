@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plants Website Design</title>
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
+  
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -83,7 +85,7 @@
     <!-- start about  -->
     <div class="about_container">
       <div class="container">
-        <div class="about_header">
+        <div class="header">
           <h2>About Us</h2>
           <p>Order now and opereciat beauty of nature</p>
         </div>
@@ -122,7 +124,7 @@
     <!-- start category -->
     <section>
       <div>
-        <div class="section_header">
+        <div class="header">
           <h2>Categories</h2>
           <p>Find whats your looking for?</p>
         </div>
@@ -151,5 +153,155 @@
         </div>
       </div>
     </section>
+    <!-- Swipper -->
+
+    <section>
+      <div>
+        <div class="header">
+          <h3>
+            What Clients says about<br />
+            GREENMIND
+          </h3>
+        </div>
+        <div class="reviews">
+          <div class="swiper my_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="review">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste nobis corrupti fugiat ipsum voluptate tempora modi quos
+                    ipsam alias hic odit error inventore velit nihil, dolorem
+                    dicta nesciunt atque eveniet!
+                  </p>
+                  <div class="review_text">
+                    <div class="user_identify">
+                      <h2>Morteza</h2>
+                      <p>Youtuber</p>
+                    </div>
+                    <div class="review_rating">
+                      <span class="material-symbols-sharp"> star </span>
+                      <span>4.5</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="review">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste nobis corrupti fugiat ipsum voluptate tempora modi quos
+                    ipsam alias hic odit error inventore velit nihil, dolorem
+                    dicta nesciunt atque eveniet!
+                  </p>
+                  <div class="review_text">
+                    <div class="user_identify">
+                      <h2>Morteza</h2>
+                      <p>Youtuber</p>
+                    </div>
+                    <div class="review_rating">
+                      <span class="material-symbols-sharp"> star </span>
+                      <span>4.5</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="review">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste nobis corrupti fugiat ipsum voluptate tempora modi quos
+                    ipsam alias hic odit error inventore velit nihil, dolorem
+                    dicta nesciunt atque eveniet!
+                  </p>
+                  <div class="review_text">
+                    <div class="user_identify">
+                      <h2>Morteza</h2>
+                      <p>Youtuber</p>
+                    </div>
+                    <div class="review_rating">
+                      <span class="material-symbols-sharp"> star </span>
+                      <span>4.5</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <button class="swiper-button-next">
+             
+            </button>
+            <button class="swiper-button-prev">
+          
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer_container">
+        <div class="footer_item">
+          <h2 class="logo">GREENMIND</h2>
+      
+        </div>
+        <div class="footer_item">
+          <h4>informtion</h4>
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li><a href="#">profuvt</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h4>Company</h4>
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li><a href="#">profuvt</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h4>contact</h4>
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li><a href="#">profuvt</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      
+      </div>
+    </footer>
+
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script >
+  
+const swiper = new Swiper('.my_swiper', {
+  // Optional parameters
+
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+ 
+});
+    </script>
+  
   </body>
 </html>
